@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Root là <merge> → inflate vào DynamicIslandView (LinearLayout)
+  → các view này trở thành con trực tiếp của LinearLayout
+  → không có wrapper thừa → không bị "cục cục"
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Hàng tiêu đề: dot + title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/islandDot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/dot_status_on" />
+
+        <TextView
+            android:id="@+id/islandTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:textColor="@color/terminal_cyan"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:text="✓ SP NEW²" />
+    </LinearLayout>
+
+    <!-- Nội dung chi tiết, ẩn mặc định -->
+    <LinearLayout
+        android:id="@+id/islandExpandedContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/terminal_border_dim" />
+
+        <TextView
+            android:id="@+id/islandBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/terminal_secondary"
+            android:textSize="11sp"
+            tools:text="by Le Thien Nhan" />
+    </LinearLayout>
+
+</merge>

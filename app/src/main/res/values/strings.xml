@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SP NEW²</string>
+    <string name="app_subtitle">Gaming Performance Center</string>
+
+    <string name="shizuku_connected">Shizuku Connected</string>
+    <string name="shizuku_disconnected">Shizuku Not Running</string>
+    <string name="shizuku_permission_needed">Permission Needed</string>
+
+    <string name="gboost_title">G-BOOST+</string>
+    <string name="gboost_subtitle">AI Performance Engine</string>
+
+    <string name="support_title">SUPPORT NEW²</string>
+    <string name="support_subtitle">System Optimization</string>
+
+    <string name="factory_reset">FACTORY RESET</string>
+    <string name="logout">LOGOUT</string>
+
+    <string name="footer_tag">SP NEW² • 2026 • Le Thien Nhan</string>
+
+    <string name="dialog_factory_reset_title">Khôi phục cài đặt gốc?</string>
+    <string name="dialog_factory_reset_msg">Thao tác này sẽ đưa độ phân giải và tất cả tối ưu về mặc định gốc. Không thể hoàn tác.</string>
+    <string name="dialog_logout_title">Đăng xuất?</string>
+    <string name="dialog_logout_msg">Mọi tối ưu đang áp dụng sẽ được giữ nguyên trên máy.</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+
+    <string name="toast_need_shizuku">Vui lòng mở app Shizuku và cấp quyền trước</string>
+    <string name="toast_gboost_on">Đã áp dụng tối ưu hiệu năng</string>
+    <string name="toast_gboost_off">Đã khôi phục cấu hình hệ thống</string>
+    <string name="toast_support_on">Đã tối ưu độ phân giải màn hình</string>
+    <string name="toast_support_off">Đã khôi phục độ phân giải gốc</string>
+    <string name="device_note">Hiệu quả tốt nhất trên thiết bị 90Hz/120Hz. Thiết bị 60Hz có thể không đạt hiệu năng tối đa.</string>
+    <string name="island_welcome_title">✓ SP NEW²</string>
+    <string name="island_welcome_body">placeholder</string>
+</resources>

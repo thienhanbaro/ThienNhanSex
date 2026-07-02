@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Khung cửa -->
+    <path
+        android:fillColor="@color/danger"
+        android:pathData="M11,3 H6 C4.9,3 4,3.9 4,5 V19 C4,20.1 4.9,21 6,21 H11 V19 H6 V5 H11 Z" />
+    <!-- Thân mũi tên -->
+    <path
+        android:fillColor="@color/danger"
+        android:pathData="M9,11 H17 V13 H9 Z" />
+    <!-- Đầu mũi tên -->
+    <path
+        android:fillColor="@color/danger"
+        android:pathData="M15,7 L20,12 L15,17 L13.6,15.6 L17.2,12 L13.6,8.4 Z" />
+</vector>
