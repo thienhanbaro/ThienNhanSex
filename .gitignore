@@ -1,0 +1,23 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# APK outputs
+*.apk
+*.aab
+
+# Keystore (KHÔNG commit keystore lên repo!)
+*.jks
+*.keystore
+
+# Gradle wrapper binary (Actions tự generate)
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.jar

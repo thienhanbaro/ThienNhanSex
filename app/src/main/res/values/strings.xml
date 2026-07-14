@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SP NEW²</string>
+    <string name="app_subtitle">Gaming Performance Center</string>
+
+    <!-- Shizuku status -->
+    <string name="shizuku_connected">Shizuku Connected</string>
+    <string name="shizuku_disconnected">Shizuku Not Running</string>
+    <string name="shizuku_permission_needed">Permission Needed</string>
+
+    <!-- Device tab: feature titles -->
+    <string name="gboost_title">G-BOOST+</string>
+    <string name="gboost_subtitle">AI Performance Engine</string>
+    <string name="support_title">SUPPORT NEW²</string>
+    <string name="support_subtitle">System Optimization</string>
+    <string name="factory_reset">FACTORY RESET</string>
+    <string name="logout">LOGOUT</string>
+    <string name="footer_tag">SP NEW² • 2026 • Le Thien Nhan</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_factory_reset_title">Khôi phục cài đặt gốc?</string>
+    <string name="dialog_factory_reset_msg">Thao tác này sẽ đưa độ phân giải và tất cả tối ưu về mặc định gốc. Không thể hoàn tác.</string>
+    <string name="dialog_logout_title">Đăng xuất?</string>
+    <string name="dialog_logout_msg">Mọi tối ưu đang áp dụng sẽ được giữ nguyên trên máy.</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+
+    <!-- Toasts -->
+    <string name="toast_need_shizuku">Vui lòng mở app Shizuku và cấp quyền trước</string>
+    <string name="toast_gboost_on">Đã áp dụng tối ưu hiệu năng</string>
+    <string name="toast_gboost_off">Đã khôi phục cấu hình hệ thống</string>
+    <string name="toast_support_on">Đã tối ưu độ phân giải màn hình</string>
+    <string name="toast_support_off">Đã khôi phục độ phân giải gốc</string>
+    <string name="device_note">Hiệu quả tốt nhất trên thiết bị 90Hz/120Hz. Thiết bị 60Hz có thể không đạt hiệu năng tối đa.</string>
+
+    <!-- Lock banner (tính năng tối ưu tạm khoá) -->
+    <string name="lock_banner_title">🔒 Tính năng tối ưu đang tạm khoá</string>
+    <string name="lock_banner_desc">Đội ngũ đang tập trung nâng cấp giao diện. G-BOOST+, SUPPORT NEW² và Factory Reset sẽ sớm mở lại trong bản cập nhật tiếp theo.</string>
+    <string name="lock_toast">Tính năng đang tạm khoá trong bản này</string>
+    <string name="lock_badge">SẮP MỞ</string>
+
+    <!-- Bottom nav labels -->
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_device">Thiết bị</string>
+    <string name="nav_account">Tài khoản</string>
+    <string name="nav_settings">Cài đặt</string>
+
+    <!-- Home: top bar -->
+    <string name="cd_menu">Mở menu</string>
+
+    <!-- Home: hero -->
+    <string name="hero_badge">🔥 SP NEW² v1.0 — Bản xem trước giao diện</string>
+    <string name="hero_announcement">Ứng dụng đang trong giai đoạn nâng cấp giao diện toàn diện. Tính năng tối ưu tạm khoá — theo dõi để cập nhật bản mới sớm nhất!</string>
+    <string name="hero_heading_1">Tối ưu hệ thống</string>
+    <string name="hero_heading_2">đa nền tảng.</string>
+    <string name="hero_heading_accent">phong cách mới.</string>
+    <string name="hero_desc">Tăng khung hình, giảm giật lag và giữ máy mát hơn khi chơi Free Fire cùng hàng trăm tựa game khác — chỉ vài chạm, không cần root.</string>
+    <string name="cta_button">Khám phá tính năng  →</string>
+
+    <!-- Home: device status -->
+    <string name="device_status_title">TRẠNG THÁI THIẾT BỊ</string>
+    <string name="label_model">Model</string>
+    <string name="label_android">Android</string>
+    <string name="label_chip">Chip</string>
+    <string name="label_ram">RAM</string>
+    <string name="label_screen">Màn hình</string>
+    <string name="label_battery">Pin</string>
+    <string name="label_ip">IP</string>
+    <string name="label_date">Ngày</string>
+    <string name="label_vulkan">Vulkan</string>
+    <string name="label_cores">Số nhân CPU</string>
+    <string name="vulkan_yes">Có hỗ trợ</string>
+    <string name="vulkan_yes_ver">Có (Vulkan %1$s)</string>
+    <string name="vulkan_no">Không hỗ trợ</string>
+
+    <!-- Home: features -->
+    <string name="features_title">Tính năng nổi bật</string>
+    <string name="feature_gboost_title">G-BOOST+</string>
+    <string name="feature_gboost_desc">50+ lệnh ADB\ntối ưu AI engine</string>
+    <string name="feature_display_title">Smart Display</string>
+    <string name="feature_display_desc">Tự tính wm size\n+ density tối ưu</string>
+    <string name="feature_reset_title">Factory Reset</string>
+    <string name="feature_reset_desc">Hoàn nguyên\nmọi cài đặt gốc</string>
+    <string name="feature_platform_title">Multi Platform</string>
+    <string name="feature_platform_desc">Android hiện tại\niOS — sắp ra mắt</string>
+
+    <!-- Home: code preview card -->
+    <string name="code_card_title">Xem trước cách hoạt động</string>
+    <string name="code_card_filename">gboost_engine.sh</string>
+    <string name="code_card_caption">Trích đoạn thực tế trong bộ lệnh G-BOOST+ — chạy qua Shizuku, không cần root. Xem đầy đủ trong tab Thiết bị.</string>
+
+    <!-- Home: about (long-form description) -->
+    <string name="about_title">SP NEW² hoạt động như thế nào?</string>
+    <string name="about_p1">SP NEW² dùng Shizuku — cầu nối quyền hệ thống hợp pháp được hàng triệu người dùng Android tin dùng — để chạy lệnh ADB tối ưu trực tiếp trên máy, không cần mở khoá bootloader hay cấy root. Mọi thao tác diễn ra âm thầm trong nền.</string>
+    <string name="about_p2">Với Free Fire nói riêng, ứng dụng nhắm vào 3 điểm nghẽn phổ biến nhất trên máy tầm trung: hoạt ảnh hệ thống ngốn khung hình, tiến trình nền tranh chấp RAM, và độ phân giải render vượt khả năng GPU. G-BOOST+ tắt hiệu ứng thừa và ưu tiên tài nguyên cho game; SUPPORT NEW² tính lại độ phân giải hiển thị theo đúng phần cứng để giảm tải GPU mà vẫn giữ hình ảnh sắc nét.</string>
+    <string name="about_p3">Mọi thay đổi có thể khôi phục 100%% bằng Factory Reset. SP NEW² không sửa file hệ thống, không xin quyền vượt quá mức cần thiết, và không thu thập dữ liệu cá nhân.</string>
+
+    <!-- Home: stats -->
+    <string name="stat_commands_value">50+</string>
+    <string name="stat_commands_label">Lệnh ADB</string>
+    <string name="stat_refresh_value">120Hz</string>
+    <string name="stat_refresh_label">Tần số quét</string>
+    <string name="stat_android_value">8.0+</string>
+    <string name="stat_android_label">Android</string>
+
+    <!-- Device tab lock banner -->
+    <string name="device_lock_title">🔒 Đang tạm khoá</string>
+    <string name="device_lock_desc">Các công tắc bên dưới hiện chỉ mang tính xem trước giao diện. Chức năng thực thi sẽ được mở lại sau khi hoàn tất nâng cấp UI.</string>
+    <string name="placeholder_desc">Tính năng này đang được phát triển và sẽ sớm ra mắt trong bản cập nhật tiếp theo.</string>
+    <string name="device_page_title">Thiết Bị</string>
+    <string name="device_page_subtitle">Trạng thái &amp; tối ưu hệ thống</string>
+    <string name="device_info_title">Thông tin thiết bị</string>
+    <string name="section_tools_title">Công cụ tối ưu</string>
+    <string name="section_system_title">Hệ thống</string>
+    <string name="rocket_title">Chạy Script Tối Ưu</string>
+    <string name="rocket_subtitle">Tối ưu sâu bằng shell script chuyên dụng</string>
+    <string name="rocket_coming_soon">Script tối ưu sẽ có trong bản cập nhật tiếp theo</string>
+    <string name="settings_page_title">Cài Đặt</string>
+    <string name="settings_appearance_title">Giao diện hiển thị</string>
+    <string name="settings_appearance_desc">Chọn giao diện sáng hoặc tối cho toàn bộ ứng dụng</string>
+    <string name="theme_light_label">☀ Sáng</string>
+    <string name="theme_dark_label">🌙 Tối</string>
+    <string name="settings_language_title">Ngôn ngữ ứng dụng</string>
+    <string name="settings_language_desc">Chọn ngôn ngữ hiển thị nội dung</string>
+    <string name="settings_about_title">Về ứng dụng</string>
+    <string name="settings_about_version">Phiên bản 1.1 • 2026</string>
+    <string name="settings_about_desc">SP NEW² là công cụ tối ưu hiệu năng Android dùng Shizuku, không cần root. Toàn bộ thay đổi đều an toàn và có thể khôi phục.</string>
+</resources>

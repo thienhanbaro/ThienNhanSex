@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android Phone Mockup - dark terminal/optimizer theme -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="130dp" android:height="250dp"
+    android:viewportWidth="130" android:viewportHeight="250">
+
+    <!-- Phone body -->
+    <path android:fillColor="#1A1A2E"
+        android:pathData="M10,4 Q4,4 4,10 L4,240 Q4,246 10,246 L120,246 Q126,246 126,240 L126,10 Q126,4 120,4 Z"/>
+
+    <!-- Screen bezel -->
+    <path android:fillColor="#0D0D1F"
+        android:pathData="M8,28 H122 V226 H8 Z"/>
+
+    <!-- Camera punch hole -->
+    <path android:fillColor="#1A1A2E"
+        android:pathData="M62,14 A4,4 0 1 0 70,14 A4,4 0 1 0 62,14"/>
+
+    <!-- Status bar ticks -->
+    <path android:fillColor="#00E5FF"
+        android:pathData="M12,30 H42 Q43,30 43,32 Q43,34 42,34 H12 Q11,34 11,32 Q11,30 12,30"/>
+    <path android:fillColor="#00E5FF"
+        android:pathData="M100,30 H118 Q119,30 119,32 Q119,34 118,34 H100 Q99,34 99,32 Q99,30 100,30"/>
+
+    <!-- App header bar -->
+    <path android:fillColor="#0A1F35"
+        android:pathData="M8,36 H122 V50 H8 Z"/>
+    <path android:fillColor="#00B4D8"
+        android:pathData="M12,40 H65 Q66,40 66,44 Q66,48 65,48 H12 Q11,48 11,44 Q11,40 12,40"/>
+    <path android:fillColor="#004D60"
+        android:pathData="M100,40 H119 Q120,40 120,44 Q120,48 119,48 H100 Q99,48 99,44 Q99,40 100,40"/>
+
+    <!-- BOOST progress section -->
+    <path android:fillColor="#0A1525"
+        android:pathData="M8,54 H122 V78 H8 Z"/>
+    <!-- Track -->
+    <path android:fillColor="#0D2035"
+        android:pathData="M12,62 H118 Q119,62 119,66 Q119,70 118,70 H12 Q11,70 11,66 Q11,62 12,62"/>
+    <!-- Fill 82% -->
+    <path android:fillColor="#00E5FF"
+        android:pathData="M12,62 H91 Q92,62 92,66 Q92,70 91,70 H12 Q11,70 11,66 Q11,62 12,62"/>
+    <!-- Label -->
+    <path android:fillColor="#002030"
+        android:pathData="M12,55 H50 Q51,55 51,58 Q51,61 50,61 H12 Q11,61 11,58 Q11,55 12,55"/>
+    <path android:fillColor="#00FF88"
+        android:pathData="M54,55 H85 Q86,55 86,58 Q86,61 85,61 H54 Q53,61 53,58 Q53,55 54,55"/>
+
+    <!-- Stats row -->
+    <path android:fillColor="#04080F"
+        android:pathData="M8,82 H122 V130 H8 Z"/>
+
+    <!-- Stat box 1 (RAM) -->
+    <path android:fillColor="#0A1830"
+        android:pathData="M10,85 H58 Q60,85 60,105 Q60,107 58,107 H10 Q8,107 8,105 L8,85"/>
+    <path android:fillColor="#00E5FF"
+        android:pathData="M14,90 H32 Q33,90 33,93 Q33,96 32,96 H14 Q13,96 13,93 Q13,90 14,90"/>
+    <path android:fillColor="#004D60"
+        android:pathData="M14,99 H54 Q55,99 55,102 Q55,105 54,105 H14 Q13,105 13,102 Q13,99 14,99"/>
+    <path android:fillColor="#00B4D8"
+        android:pathData="M14,99 H38 Q39,99 39,102 Q39,105 38,105 H14 Q13,105 13,102 Q13,99 14,99"/>
+
+    <!-- Stat box 2 (FPS) -->
+    <path android:fillColor="#0A1830"
+        android:pathData="M62,85 H120 Q122,85 122,105 Q122,107 120,107 H62 Q60,107 60,105 L60,85"/>
+    <path android:fillColor="#BB22FF"
+        android:pathData="M66,90 H84 Q85,90 85,93 Q85,96 84,96 H66 Q65,96 65,93 Q65,90 66,90"/>
+    <path android:fillColor="#2D0A40"
+        android:pathData="M66,99 H116 Q117,99 117,102 Q117,105 116,105 H66 Q65,105 65,102 Q65,99 66,99"/>
+    <path android:fillColor="#BB22FF"
+        android:pathData="M66,99 H102 Q103,99 103,102 Q103,105 102,105 H66 Q65,105 65,102 Q65,99 66,99"/>
+
+    <!-- Feature grid -->
+    <path android:fillColor="#04080F"
+        android:pathData="M8,133 H122 V185 H8 Z"/>
+
+    <!-- Card 1: G-BOOST -->
+    <path android:fillColor="#061828"
+        android:pathData="M10,136 H59 Q61,136 61,158 Q61,160 59,160 H10 Q8,160 8,158 L8,136"/>
+    <path android:fillColor="#00B4D8"
+        android:pathData="M14,140 H30 Q32,140 32,148 Q32,156 30,156 H14 Q12,156 12,148 Q12,140 14,140"/>
+    <path android:fillColor="#0A2030"
+        android:pathData="M34,140 H56 Q57,140 57,143 Q57,146 56,146 H34 Q33,146 33,143 Q33,140 34,140"/>
+    <path android:fillColor="#0A2030"
+        android:pathData="M34,148 H56 Q57,148 57,151 Q57,154 56,154 H34 Q33,154 33,151 Q33,148 34,148"/>
+
+    <!-- Card 2: DISPLAY -->
+    <path android:fillColor="#100820"
+        android:pathData="M62,136 H120 Q122,136 122,158 Q122,160 120,160 H62 Q60,160 60,158 L60,136"/>
+    <path android:fillColor="#7B22CC"
+        android:pathData="M66,140 H82 Q84,140 84,148 Q84,156 82,156 H66 Q64,156 64,148 Q64,140 66,140"/>
+    <path android:fillColor="#1A0A2E"
+        android:pathData="M86,140 H116 Q117,140 117,143 Q117,146 116,146 H86 Q85,146 85,143 Q85,140 86,140"/>
+    <path android:fillColor="#1A0A2E"
+        android:pathData="M86,148 H116 Q117,148 117,151 Q117,154 116,154 H86 Q85,154 85,151 Q85,148 86,148"/>
+
+    <!-- Bottom row cards -->
+    <path android:fillColor="#0A1400"
+        android:pathData="M10,163 H59 Q61,163 61,182 Q61,184 59,184 H10 Q8,184 8,182 L8,163"/>
+    <path android:fillColor="#00FF44"
+        android:pathData="M14,167 H26 Q28,167 28,179 Q28,181 26,181 H14 Q12,181 12,179 Q12,167 14,167"/>
+    <path android:fillColor="#004400"
+        android:pathData="M30,167 H56 Q57,167 57,170 Q57,173 56,173 H30 Q29,173 29,170 Q29,167 30,167"/>
+    <path android:fillColor="#004400"
+        android:pathData="M30,175 H50 Q51,175 51,178 Q51,181 50,181 H30 Q29,181 29,178 Q29,175 30,175"/>
+
+    <path android:fillColor="#140A00"
+        android:pathData="M62,163 H120 Q122,163 122,182 Q122,184 120,184 H62 Q60,184 60,182 L60,163"/>
+    <path android:fillColor="#FF8800"
+        android:pathData="M66,167 H78 Q80,167 80,179 Q80,181 78,181 H66 Q64,181 64,179 Q64,167 66,167"/>
+    <path android:fillColor="#301800"
+        android:pathData="M82,167 H116 Q117,167 117,170 Q117,173 116,173 H82 Q81,173 81,170 Q81,167 82,167"/>
+    <path android:fillColor="#301800"
+        android:pathData="M82,175 H110 Q111,175 111,178 Q111,181 110,181 H82 Q81,181 81,178 Q81,175 82,175"/>
+
+    <!-- Bottom nav bar of phone -->
+    <path android:fillColor="#060C18"
+        android:pathData="M8,188 H122 V224 H8 Z"/>
+    <path android:fillColor="#00E5FF"
+        android:pathData="M20,200 H36 Q37,200 37,207 Q37,214 36,214 H20 Q19,214 19,207 Q19,200 20,200"/>
+    <path android:fillColor="#0A1830"
+        android:pathData="M50,200 H66 Q67,200 67,207 Q67,214 66,214 H50 Q49,214 49,207 Q49,200 50,200"/>
+    <path android:fillColor="#0A1830"
+        android:pathData="M80,200 H96 Q97,200 97,207 Q97,214 96,214 H80 Q79,214 79,207 Q79,200 80,207"/>
+
+    <!-- Home indicator line -->
+    <path android:fillColor="#1A3040"
+        android:pathData="M48,232 H82 Q83,232 83,234 Q83,236 82,236 H48 Q47,236 47,234 Q47,232 48,232"/>
+
+    <!-- Side buttons -->
+    <path android:fillColor="#141428" android:pathData="M125,60 L127,60 L127,95 L125,95 Z"/>
+    <path android:fillColor="#141428" android:pathData="M3,65 L5,65 L5,80 L3,80 Z"/>
+    <path android:fillColor="#141428" android:pathData="M3,45 L5,45 L5,58 L3,58 Z"/>
+</vector>

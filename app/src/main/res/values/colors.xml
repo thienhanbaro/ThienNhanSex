@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LIGHT THEME (default bucket). Dark variants live in values-night/colors.xml
+     with the SAME key names — Android resolves the right one automatically
+     based on AppCompatDelegate's night mode. Keep both files' key sets in sync. -->
+<resources>
+
+    <!-- Core surfaces -->
+    <color name="terminal_bg">#EEF3F8</color>
+    <color name="terminal_bg_card">#FFFFFF</color>
+    <color name="terminal_bg_card_active">#E3F6FC</color>
+    <color name="terminal_bg_section">#E7EEF5</color>
+
+    <!-- Accent (brand cyan-blue) -->
+    <color name="terminal_cyan">#0088B3</color>
+    <color name="terminal_cyan_dark">#00688A</color>
+    <color name="terminal_cyan_dim">#CFEFF9</color>
+    <color name="terminal_border">#8FC6DB</color>
+    <color name="terminal_border_dim">#D8E2EA</color>
+
+    <!-- Text -->
+    <color name="terminal_white">#14202B</color>
+    <color name="terminal_secondary">#5C7086</color>
+    <color name="terminal_tertiary">#93A6B8</color>
+
+    <!-- Status / semantic -->
+    <color name="terminal_green">#00A366</color>
+    <color name="terminal_yellow">#C99400</color>
+    <color name="terminal_red">#E63946</color>
+    <color name="terminal_orange">#E8720C</color>
+    <color name="status_online">#00A366</color>
+    <color name="status_offline">#B8C4CE</color>
+
+    <!-- Switch -->
+    <color name="switch_track_off">#DDE5EC</color>
+    <color name="switch_thumb">#0088B3</color>
+
+    <!-- Dynamic Island -->
+    <color name="island_bg">#FFFFFF</color>
+
+    <!-- ASCII logo rainbow (deepened slightly for contrast on light bg) -->
+    <color name="ascii_r1">#E8280A</color>
+    <color name="ascii_r2">#E87A00</color>
+    <color name="ascii_r3">#CC9A00</color>
+    <color name="ascii_r4">#00A83A</color>
+    <color name="ascii_r5">#0095B8</color>
+    <color name="ascii_r6">#3355EE</color>
+    <color name="ascii_r7">#9A1FE0</color>
+
+    <!-- Legacy aliases (kept so existing layouts/kotlin need no changes) -->
+    <color name="bg_root">@color/terminal_bg</color>
+    <color name="bg_card">@color/terminal_bg_card</color>
+    <color name="bg_card_alt">@color/terminal_bg_card_active</color>
+    <color name="bg_card_stroke">@color/terminal_border_dim</color>
+    <color name="accent_primary">@color/terminal_cyan</color>
+    <color name="accent_primary_dark">@color/terminal_cyan_dark</color>
+    <color name="accent_primary_light">@color/terminal_cyan</color>
+    <color name="accent_secondary">@color/terminal_cyan_dark</color>
+    <color name="text_primary">@color/terminal_white</color>
+    <color name="text_secondary">@color/terminal_secondary</color>
+    <color name="text_tertiary">@color/terminal_tertiary</color>
+    <color name="danger">@color/terminal_red</color>
+    <color name="divider">@color/terminal_border_dim</color>
+
+    <!-- Home screen (aliased to core tokens so light/dark stays in sync) -->
+    <color name="home_bg">@color/terminal_bg</color>
+    <color name="home_card_bg">@color/terminal_bg_card</color>
+    <color name="home_text_primary">@color/terminal_white</color>
+    <color name="home_text_secondary">@color/terminal_secondary</color>
+    <color name="home_accent_blue">#4FC3F7</color>
+    <color name="home_accent_purple">#9C4FFF</color>
+    <color name="home_accent_orange">#FF6B35</color>
+    <color name="home_accent_cyan">@color/terminal_cyan</color>
+
+    <!-- Bottom nav (used by GlassBottomNavView for icon/label tint) -->
+    <color name="bottom_nav_selected">@color/terminal_cyan</color>
+    <color name="bottom_nav_unselected">@color/terminal_tertiary</color>
+
+    <!-- Glass nav bar -->
+    <color name="glass_nav_bg">#CCFFFFFF</color>
+    <color name="glass_nav_border">#80FFFFFF</color>
+    <color name="glass_indicator">#332B8FB8</color>
+
+    <!-- Lock overlay (shown over disabled optimization rows) -->
+    <color name="lock_scrim">#CCE7EEF5</color>
+    <color name="lock_badge_bg">#1A2B3A</color>
+    <color name="lock_badge_text">#FFD966</color>
+
+    <!-- Code preview card: intentionally ALWAYS dark, like a real code editor,
+         regardless of app light/dark mode — this block is identical in
+         values-night/colors.xml on purpose. -->
+    <color name="code_bg">#0D1117</color>
+    <color name="code_bg_alt">#161B22</color>
+    <color name="code_border">#30363D</color>
+    <color name="code_kw">#00E5FF</color>
+    <color name="code_str">#FFA657</color>
+    <color name="code_num">#E3B341</color>
+    <color name="code_comment">#8B949E</color>
+    <color name="code_text">#C9D1D9</color>
+    <color name="dot_traffic_red">#FF5F56</color>
+    <color name="dot_traffic_yellow">#FFBD2E</color>
+    <color name="dot_traffic_green">#27C93F</color>
+
+</resources>

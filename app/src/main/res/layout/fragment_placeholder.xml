@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/terminal_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/tvPlaceholderIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚙"
+        android:textSize="56sp"
+        android:textColor="@color/terminal_cyan_dark"/>
+
+    <TextView
+        android:id="@+id/tvPlaceholderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="ĐANG PHÁT TRIỂN"
+        android:textColor="@color/terminal_white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvPlaceholderSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="Tính năng này sẽ sớm được\nra mắt trong phiên bản tiếp theo."
+        android:textColor="@color/terminal_secondary"
+        android:textSize="13sp"/>
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/terminal_cyan_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="SP NEW² • 2026"
+        android:textColor="@color/terminal_tertiary"
+        android:textSize="12sp"/>
+
+</LinearLayout>

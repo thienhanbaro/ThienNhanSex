@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp"
+        android:overScrollMode="always">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ══════════════ HERO ══════════════ -->
+            <FrameLayout
+                android:id="@+id/heroContainer"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:background="@drawable/bg_aurora">
+
+                <View android:id="@+id/statusBarSpacer"
+                    android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_gravity="top"/>
+
+                <LinearLayout
+                    android:id="@+id/topBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <ImageButton
+                        android:id="@+id/btnMenu"
+                        android:layout_width="40dp" android:layout_height="40dp"
+                        android:background="@drawable/bg_round_button"
+                        android:src="@drawable/ic_menu" android:padding="10dp"
+                        android:contentDescription="@string/cd_menu"/>
+
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/app_name" android:textColor="@color/home_text_primary"
+                        android:textSize="16sp" android:textStyle="bold"/>
+
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+                    <!-- Spacer cân bằng thị giác với nút menu bên trái -->
+                    <View android:layout_width="40dp" android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <!-- Badge + announcement -->
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_gravity="top" android:layout_marginTop="58dp"
+                    android:layout_marginStart="18dp" android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_home_card" android:elevation="6dp"
+                    android:orientation="vertical" android:padding="16dp">
+
+                    <TextView android:id="@+id/tvHeroBadge"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/hero_badge" android:textColor="@color/home_accent_blue"
+                        android:textSize="11.5sp" android:textStyle="bold"/>
+
+                    <TextView android:id="@+id/tvHeroAnnouncement"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp" android:gravity="center"
+                        android:lineSpacingExtra="3dp" android:text="@string/hero_announcement"
+                        android:textColor="@color/home_text_primary" android:textSize="13sp"/>
+                </LinearLayout>
+
+                <!-- Phone mockups (parallax khi cuộn) -->
+                <LinearLayout
+                    android:id="@+id/phoneMockups"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:gravity="bottom" android:orientation="horizontal"
+                    android:paddingStart="16dp" android:paddingEnd="16dp">
+
+                    <ImageView android:layout_width="120dp" android:layout_height="230dp"
+                        android:layout_marginEnd="-14dp" android:rotation="-6" android:translationY="10dp"
+                        android:elevation="4dp" android:src="@drawable/ic_phone_android"
+                        android:contentDescription="@null"/>
+
+                    <ImageView android:layout_width="120dp" android:layout_height="230dp"
+                        android:layout_marginStart="-14dp" android:rotation="6"
+                        android:elevation="6dp" android:src="@drawable/ic_phone_ios"
+                        android:contentDescription="@null"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- ══════════════ HERO TEXT + CTA ══════════════ -->
+            <LinearLayout
+                android:id="@+id/heroTextGroup"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@color/home_bg" android:orientation="vertical"
+                android:paddingStart="24dp" android:paddingEnd="24dp"
+                android:paddingTop="28dp" android:paddingBottom="8dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/hero_heading_1" android:textColor="@color/home_text_primary"
+                    android:textSize="28sp" android:textStyle="bold" android:letterSpacing="-0.02"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/hero_heading_2" android:textColor="@color/home_text_primary"
+                    android:textSize="28sp" android:textStyle="bold" android:letterSpacing="-0.02"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/hero_heading_accent" android:textColor="@color/home_accent_blue"
+                    android:textSize="28sp" android:textStyle="bold" android:letterSpacing="-0.02"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:text="@string/hero_desc"
+                    android:textColor="@color/home_text_secondary" android:textSize="14sp"
+                    android:lineSpacingExtra="3dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp" android:gravity="end" android:orientation="horizontal">
+
+                    <TextView android:id="@+id/btnCta"
+                        android:layout_width="wrap_content" android:layout_height="50dp"
+                        android:background="@drawable/bg_cta_button" android:gravity="center"
+                        android:paddingStart="28dp" android:paddingEnd="28dp"
+                        android:text="@string/cta_button" android:textColor="@color/home_card_bg"
+                        android:textSize="15sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══════════════ DEVICE STATUS (live) ══════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_home_card" android:elevation="2dp"
+                android:orientation="vertical" android:padding="18dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/device_status_title" android:textColor="@color/home_text_secondary"
+                    android:textSize="11.5sp" android:textStyle="bold" android:letterSpacing="0.06"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:orientation="horizontal" android:weightSum="2">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/label_model" android:textColor="@color/home_text_secondary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvStatusModel"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:textColor="@color/home_text_primary"
+                            android:textSize="13.5sp" android:textStyle="bold" tools:text="Samsung SM-A536E"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/label_android" android:textColor="@color/home_text_secondary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvStatusAndroid"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:textColor="@color/home_text_primary"
+                            android:textSize="13.5sp" android:textStyle="bold" tools:text="Android 14"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:layout_marginTop="14dp" android:layout_marginBottom="14dp"
+                    android:background="@color/terminal_border_dim"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:weightSum="2">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/label_vulkan" android:textColor="@color/home_text_secondary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvStatusVulkan"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:textColor="@color/home_accent_blue"
+                            android:textSize="13.5sp" android:textStyle="bold" tools:text="Có (Vulkan 1.1)"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/label_cores" android:textColor="@color/home_text_secondary" android:textSize="11sp"/>
+                        <TextView android:id="@+id/tvStatusCores"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp" android:textColor="@color/home_text_primary"
+                            android:textSize="13.5sp" android:textStyle="bold" tools:text="8"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══════════════ FEATURES ══════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="26dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp" android:layout_marginBottom="14dp"
+                    android:text="@string/features_title" android:textColor="@color/home_text_primary"
+                    android:textSize="18sp" android:textStyle="bold"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:weightSum="2">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_feature_card" android:elevation="2dp"
+                        android:orientation="vertical" android:padding="16dp">
+                        <FrameLayout android:layout_width="44dp" android:layout_height="44dp"
+                            android:background="@drawable/bg_feature_icon">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_bolt" android:contentDescription="@null"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp" android:text="@string/feature_gboost_title"
+                            android:textColor="@color/home_text_primary" android:textSize="15sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" android:text="@string/feature_gboost_desc"
+                            android:textColor="@color/home_text_secondary" android:textSize="12sp" android:lineSpacingExtra="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_feature_card" android:elevation="2dp"
+                        android:orientation="vertical" android:padding="16dp">
+                        <FrameLayout android:layout_width="44dp" android:layout_height="44dp"
+                            android:background="@drawable/bg_feature_icon_purple">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_display" android:contentDescription="@null"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp" android:text="@string/feature_display_title"
+                            android:textColor="@color/home_text_primary" android:textSize="15sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" android:text="@string/feature_display_desc"
+                            android:textColor="@color/home_text_secondary" android:textSize="12sp" android:lineSpacingExtra="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:orientation="horizontal" android:weightSum="2">
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginEnd="8dp"
+                        android:background="@drawable/bg_feature_card" android:elevation="2dp"
+                        android:orientation="vertical" android:padding="16dp">
+                        <FrameLayout android:layout_width="44dp" android:layout_height="44dp"
+                            android:background="@drawable/bg_feature_icon_orange">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_refresh" android:contentDescription="@null"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp" android:text="@string/feature_reset_title"
+                            android:textColor="@color/home_text_primary" android:textSize="15sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" android:text="@string/feature_reset_desc"
+                            android:textColor="@color/home_text_secondary" android:textSize="12sp" android:lineSpacingExtra="2dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_feature_card" android:elevation="2dp"
+                        android:orientation="vertical" android:padding="16dp">
+                        <FrameLayout android:layout_width="44dp" android:layout_height="44dp"
+                            android:background="@drawable/bg_feature_icon">
+                            <ImageView android:layout_width="22dp" android:layout_height="22dp"
+                                android:layout_gravity="center" android:src="@drawable/ic_info" android:contentDescription="@null"/>
+                        </FrameLayout>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp" android:text="@string/feature_platform_title"
+                            android:textColor="@color/home_text_primary" android:textSize="15sp" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp" android:text="@string/feature_platform_desc"
+                            android:textColor="@color/home_text_secondary" android:textSize="12sp" android:lineSpacingExtra="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══════════════ CODE PREVIEW CARD ══════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="26dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp" android:layout_marginBottom="14dp"
+                    android:text="@string/code_card_title" android:textColor="@color/home_text_primary"
+                    android:textSize="18sp" android:textStyle="bold"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_code_card" android:orientation="vertical">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@drawable/bg_code_titlebar" android:gravity="center_vertical"
+                        android:orientation="horizontal" android:paddingStart="14dp" android:paddingEnd="14dp"
+                        android:paddingTop="10dp" android:paddingBottom="10dp">
+
+                        <View android:layout_width="10dp" android:layout_height="10dp"
+                            android:background="@drawable/shape_circle" android:backgroundTint="@color/dot_traffic_red"/>
+                        <View android:layout_width="10dp" android:layout_height="10dp" android:layout_marginStart="6dp"
+                            android:background="@drawable/shape_circle" android:backgroundTint="@color/dot_traffic_yellow"/>
+                        <View android:layout_width="10dp" android:layout_height="10dp" android:layout_marginStart="6dp"
+                            android:background="@drawable/shape_circle" android:backgroundTint="@color/dot_traffic_green"/>
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:layout_marginStart="12dp" android:gravity="center"
+                            android:fontFamily="monospace" android:text="@string/code_card_filename"
+                            android:textColor="@color/code_comment" android:textSize="11.5sp"/>
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/tvCodeSnippet"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:fontFamily="monospace" android:lineSpacingExtra="5dp"
+                        android:padding="16dp" android:textSize="11.5sp"
+                        tools:text="settings put global window_animation_scale 0"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" android:text="@string/code_card_caption"
+                    android:textColor="@color/home_text_secondary" android:textSize="12sp" android:lineSpacingExtra="2dp"/>
+            </LinearLayout>
+
+            <!-- ══════════════ ABOUT (mô tả dài) ══════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingTop="26dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp" android:layout_marginBottom="14dp"
+                    android:text="@string/about_title" android:textColor="@color/home_text_primary"
+                    android:textSize="18sp" android:textStyle="bold"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/bg_home_card" android:elevation="2dp"
+                    android:orientation="vertical" android:padding="18dp">
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="@string/about_p1" android:textColor="@color/home_text_secondary"
+                        android:textSize="13.5sp" android:lineSpacingExtra="4dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp" android:text="@string/about_p2"
+                        android:textColor="@color/home_text_secondary" android:textSize="13.5sp" android:lineSpacingExtra="4dp"/>
+
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp" android:text="@string/about_p3"
+                        android:textColor="@color/home_text_secondary" android:textSize="13.5sp" android:lineSpacingExtra="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ══════════════ STATS ══════════════ -->
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:paddingTop="22dp" android:paddingBottom="8dp" android:weightSum="3">
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_stat_chip" android:elevation="1dp"
+                    android:gravity="center" android:orientation="vertical" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/stat_commands_value" android:textColor="@color/home_accent_blue"
+                        android:textSize="20sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/stat_commands_label" android:textColor="@color/home_text_secondary"
+                        android:textSize="11sp" android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"
+                    android:background="@drawable/bg_stat_chip" android:elevation="1dp"
+                    android:gravity="center" android:orientation="vertical" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/stat_refresh_value" android:textColor="@color/home_accent_purple"
+                        android:textSize="20sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/stat_refresh_label" android:textColor="@color/home_text_secondary"
+                        android:textSize="11sp" android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="6dp"
+                    android:background="@drawable/bg_stat_chip" android:elevation="1dp"
+                    android:gravity="center" android:orientation="vertical" android:padding="12dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/stat_android_value" android:textColor="@color/home_accent_orange"
+                        android:textSize="20sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/stat_android_label" android:textColor="@color/home_text_secondary"
+                        android:textSize="11sp" android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" android:layout_marginBottom="16dp"
+                android:gravity="center" android:text="@string/footer_tag"
+                android:textColor="@color/home_text_secondary" android:textSize="11sp" android:alpha="0.6"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

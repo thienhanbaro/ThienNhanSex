@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- iPhone Mockup - light clean iOS style -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="130dp" android:height="250dp"
+    android:viewportWidth="130" android:viewportHeight="250">
+
+    <!-- Phone shadow layer -->
+    <path android:fillColor="#D0D8E8"
+        android:pathData="M14,8 Q6,8 6,16 L6,244 Q6,252 14,252 L118,252 Q126,252 126,244 L126,16 Q126,8 118,8 Z"/>
+
+    <!-- Phone body: silver/white -->
+    <path android:fillColor="#F5F5F7"
+        android:pathData="M12,4 Q4,4 4,12 L4,240 Q4,248 12,248 L118,248 Q126,248 126,240 L126,12 Q126,4 118,4 Z"/>
+
+    <!-- Screen: pure white -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M8,18 H122 V234 H8 Z"/>
+
+    <!-- Dynamic Island (iPhone 14+ style notch) -->
+    <path android:fillColor="#111111"
+        android:pathData="M48,20 Q48,14 54,14 L76,14 Q82,14 82,20 Q82,26 76,26 L54,26 Q48,26 48,20"/>
+
+    <!-- Status bar icons (right) -->
+    <path android:fillColor="#333333"
+        android:pathData="M96,20 H108 Q109,20 109,22 Q109,24 108,24 H96 Q95,24 95,22 Q95,20 96,20"/>
+    <path android:fillColor="#333333"
+        android:pathData="M110,20 H116 Q117,20 117,22 Q117,24 116,24 H110 Q109,24 109,22 Q109,20 110,20"/>
+
+    <!-- App bar: gradient blue -->
+    <path android:fillColor="#0090C8"
+        android:pathData="M8,30 H122 V56 H8 Z"/>
+    <!-- App title text bar -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M14,38 H70 Q71,38 71,42 Q71,46 70,46 H14 Q13,46 13,42 Q13,38 14,38"/>
+    <!-- Search bar -->
+    <path android:fillColor="#006A9A"
+        android:pathData="M80,35 H118 Q119,35 119,50 Q119,52 118,52 H80 Q78,52 78,50 L78,35 Q78,33 80,35"/>
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M82,38 H96 Q97,38 97,41 Q97,44 96,44 H82 Q81,44 81,41 Q81,38 82,38"/>
+
+    <!-- List items (iOS style) -->
+    <path android:fillColor="#F8F8F8"
+        android:pathData="M8,58 H122 V80 H8 Z"/>
+    <!-- App icon placeholder 1 -->
+    <path android:fillColor="#4FC3F7"
+        android:pathData="M12,61 H30 Q32,61 32,77 Q32,79 30,79 H12 Q10,79 10,77 L10,61"/>
+    <path android:fillColor="#E8E8E8"
+        android:pathData="M34,62 H90 Q91,62 91,65 Q91,68 90,68 H34 Q33,68 33,65 Q33,62 34,62"/>
+    <path android:fillColor="#ECECEC"
+        android:pathData="M34,70 H70 Q71,70 71,73 Q71,76 70,76 H34 Q33,76 33,73 Q33,70 34,70"/>
+    <path android:fillColor="#4FC3F7"
+        android:pathData="M104,65 H118 Q119,65 119,72 Q119,75 118,75 H104 Q103,75 103,72 Q103,65 104,65"/>
+
+    <!-- Divider -->
+    <path android:fillColor="#E5E5EA" android:pathData="M34,81 H122 Q122,82 122,82 H34 Z"/>
+
+    <!-- List item 2 -->
+    <path android:fillColor="#F8F8F8" android:pathData="M8,82 H122 V104 H8 Z"/>
+    <path android:fillColor="#9C4FFF"
+        android:pathData="M12,85 H30 Q32,85 32,101 Q32,103 30,103 H12 Q10,103 10,101 L10,85"/>
+    <path android:fillColor="#E8E8E8"
+        android:pathData="M34,86 H88 Q89,86 89,89 Q89,92 88,92 H34 Q33,92 33,89 Q33,86 34,86"/>
+    <path android:fillColor="#ECECEC"
+        android:pathData="M34,94 H60 Q61,94 61,97 Q61,100 60,100 H34 Q33,100 33,97 Q33,94 34,94"/>
+
+    <path android:fillColor="#E5E5EA" android:pathData="M34,105 H122 Q122,106 122,106 H34 Z"/>
+
+    <!-- List item 3 -->
+    <path android:fillColor="#F8F8F8" android:pathData="M8,106 H122 V128 H8 Z"/>
+    <path android:fillColor="#FF6B35"
+        android:pathData="M12,109 H30 Q32,109 32,125 Q32,127 30,127 H12 Q10,127 10,125 L10,109"/>
+    <path android:fillColor="#E8E8E8"
+        android:pathData="M34,110 H95 Q96,110 96,113 Q96,116 95,116 H34 Q33,116 33,113 Q33,110 34,110"/>
+    <path android:fillColor="#ECECEC"
+        android:pathData="M34,118 H72 Q73,118 73,121 Q73,124 72,124 H34 Q33,124 33,121 Q33,118 34,118"/>
+
+    <path android:fillColor="#E5E5EA" android:pathData="M34,129 H122 Q122,130 122,130 H34 Z"/>
+
+    <!-- List item 4 -->
+    <path android:fillColor="#F8F8F8" android:pathData="M8,130 H122 V152 H8 Z"/>
+    <path android:fillColor="#00C896"
+        android:pathData="M12,133 H30 Q32,133 32,149 Q32,151 30,151 H12 Q10,151 10,149 L10,133"/>
+    <path android:fillColor="#E8E8E8"
+        android:pathData="M34,134 H82 Q83,134 83,137 Q83,140 82,140 H34 Q33,140 33,137 Q33,134 34,134"/>
+    <path android:fillColor="#ECECEC"
+        android:pathData="M34,142 H55 Q56,142 56,145 Q56,148 55,148 H34 Q33,148 33,145 Q33,142 34,142"/>
+
+    <!-- System info section -->
+    <path android:fillColor="#F2F2F7" android:pathData="M8,160 H122 V200 H8 Z"/>
+    <!-- Section title -->
+    <path android:fillColor="#C8C8D0"
+        android:pathData="M12,163 H55 Q56,163 56,166 Q56,169 55,169 H12 Q11,169 11,166 Q11,163 12,163"/>
+    <!-- Code lines -->
+    <path android:fillColor="#4FC3F7"
+        android:pathData="M12,172 H40 Q41,172 41,175 Q41,178 40,178 H12 Q11,178 11,175 Q11,172 12,172"/>
+    <path android:fillColor="#D0D0D8"
+        android:pathData="M43,172 H90 Q91,172 91,175 Q91,178 90,178 H43 Q42,178 42,175 Q42,172 43,172"/>
+    <path android:fillColor="#9C4FFF"
+        android:pathData="M12,181 H30 Q31,181 31,184 Q31,187 30,187 H12 Q11,187 11,184 Q11,181 12,181"/>
+    <path android:fillColor="#D0D0D8"
+        android:pathData="M33,181 H70 Q71,181 71,184 Q71,187 70,187 H33 Q32,187 32,184 Q32,181 33,181"/>
+    <path android:fillColor="#FF6B35"
+        android:pathData="M12,190 H50 Q51,190 51,193 Q51,196 50,196 H12 Q11,196 11,193 Q11,190 12,190"/>
+    <path android:fillColor="#D0D0D8"
+        android:pathData="M53,190 H100 Q101,190 101,193 Q101,196 100,196 H53 Q52,196 52,193 Q52,190 53,190"/>
+
+    <!-- Bottom tab bar (iOS style) -->
+    <path android:fillColor="#F8F8F8"
+        android:pathData="M8,206 H122 V232 H8 Z"/>
+    <path android:fillColor="#E0E0E8" android:pathData="M8,206 H122 V207 H8 Z"/>
+    <!-- Tab icons -->
+    <path android:fillColor="#0090C8"
+        android:pathData="M18,212 H30 Q31,212 31,218 Q31,224 30,224 H18 Q17,224 17,218 Q17,212 18,212"/>
+    <path android:fillColor="#C8C8D0"
+        android:pathData="M40,212 H52 Q53,212 53,218 Q53,224 52,224 H40 Q39,224 39,218 Q39,212 40,212"/>
+    <path android:fillColor="#C8C8D0"
+        android:pathData="M60,212 H72 Q73,212 73,218 Q73,224 72,224 H60 Q59,224 59,218 Q59,212 60,212"/>
+    <path android:fillColor="#C8C8D0"
+        android:pathData="M80,212 H92 Q93,212 93,218 Q93,224 92,224 H80 Q79,224 79,218 Q79,212 80,212"/>
+    <path android:fillColor="#C8C8D0"
+        android:pathData="M100,212 H112 Q113,212 113,218 Q113,224 112,224 H100 Q99,224 99,218 Q99,212 100,212"/>
+
+    <!-- Home indicator -->
+    <path android:fillColor="#C8C8D0"
+        android:pathData="M48,236 H82 Q83,236 83,238 Q83,240 82,240 H48 Q47,240 47,238 Q47,236 48,236"/>
+
+    <!-- Side buttons -->
+    <path android:fillColor="#E0E0E0" android:pathData="M125,55 L127,55 L127,85 L125,85 Z"/>
+    <path android:fillColor="#E0E0E0" android:pathData="M3,65 L5,65 L5,80 L3,80 Z"/>
+    <path android:fillColor="#E0E0E0" android:pathData="M3,45 L5,45 L5,55 L3,55 Z"/>
+</vector>

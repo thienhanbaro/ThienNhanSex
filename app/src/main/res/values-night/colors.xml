@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DARK THEME. Same key set as values/colors.xml — do not add a key here
+     without also adding it there, and vice versa. -->
+<resources>
+
+    <color name="terminal_bg">#050810</color>
+    <color name="terminal_bg_card">#0A121C</color>
+    <color name="terminal_bg_card_active">#0F2233</color>
+    <color name="terminal_bg_section">#04080F</color>
+
+    <color name="terminal_cyan">#00E5FF</color>
+    <color name="terminal_cyan_dark">#00B4D8</color>
+    <color name="terminal_cyan_dim">#004D60</color>
+    <color name="terminal_border">#0090B0</color>
+    <color name="terminal_border_dim">#152838</color>
+
+    <color name="terminal_white">#E9F1F7</color>
+    <color name="terminal_secondary">#8CA3B8</color>
+    <color name="terminal_tertiary">#42586C</color>
+
+    <color name="terminal_green">#00FF88</color>
+    <color name="terminal_yellow">#FFD700</color>
+    <color name="terminal_red">#FF5C5C</color>
+    <color name="terminal_orange">#FF9433</color>
+    <color name="status_online">#00FF88</color>
+    <color name="status_offline">#42586C</color>
+
+    <color name="switch_track_off">#152838</color>
+    <color name="switch_thumb">#00E5FF</color>
+
+    <color name="island_bg">#0A121C</color>
+
+    <color name="ascii_r1">#FF4433</color>
+    <color name="ascii_r2">#FF9433</color>
+    <color name="ascii_r3">#FFE044</color>
+    <color name="ascii_r4">#33FF77</color>
+    <color name="ascii_r5">#33D6FF</color>
+    <color name="ascii_r6">#6688FF</color>
+    <color name="ascii_r7">#C255FF</color>
+
+    <color name="bg_root">@color/terminal_bg</color>
+    <color name="bg_card">@color/terminal_bg_card</color>
+    <color name="bg_card_alt">@color/terminal_bg_card_active</color>
+    <color name="bg_card_stroke">@color/terminal_border_dim</color>
+    <color name="accent_primary">@color/terminal_cyan</color>
+    <color name="accent_primary_dark">@color/terminal_cyan_dark</color>
+    <color name="accent_primary_light">@color/terminal_cyan</color>
+    <color name="accent_secondary">@color/terminal_cyan_dark</color>
+    <color name="text_primary">@color/terminal_white</color>
+    <color name="text_secondary">@color/terminal_secondary</color>
+    <color name="text_tertiary">@color/terminal_tertiary</color>
+    <color name="danger">@color/terminal_red</color>
+    <color name="divider">@color/terminal_border_dim</color>
+
+    <color name="home_bg">@color/terminal_bg</color>
+    <color name="home_card_bg">@color/terminal_bg_card</color>
+    <color name="home_text_primary">@color/terminal_white</color>
+    <color name="home_text_secondary">@color/terminal_secondary</color>
+    <color name="home_accent_blue">#5AD1FF</color>
+    <color name="home_accent_purple">#B47BFF</color>
+    <color name="home_accent_orange">#FF8B5C</color>
+    <color name="home_accent_cyan">@color/terminal_cyan</color>
+
+    <color name="bottom_nav_selected">@color/terminal_cyan</color>
+    <color name="bottom_nav_unselected">@color/terminal_tertiary</color>
+
+    <color name="glass_nav_bg">#B30A121C</color>
+    <color name="glass_nav_border">#3300E5FF</color>
+    <color name="glass_indicator">#4000E5FF</color>
+
+    <color name="lock_scrim">#CC04080F</color>
+    <color name="lock_badge_bg">#0A2030</color>
+    <color name="lock_badge_text">#FFD966</color>
+
+    <!-- Code card stays identical to light mode by design -->
+    <color name="code_bg">#0D1117</color>
+    <color name="code_bg_alt">#161B22</color>
+    <color name="code_border">#30363D</color>
+    <color name="code_kw">#00E5FF</color>
+    <color name="code_str">#FFA657</color>
+    <color name="code_num">#E3B341</color>
+    <color name="code_comment">#8B949E</color>
+    <color name="code_text">#C9D1D9</color>
+    <color name="dot_traffic_red">#FF5F56</color>
+    <color name="dot_traffic_yellow">#FFBD2E</color>
+    <color name="dot_traffic_green">#27C93F</color>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SP NEW²</string>
+    <string name="app_subtitle">Gaming Performance Center</string>
+
+    <string name="shizuku_connected">Shizuku Connected</string>
+    <string name="shizuku_disconnected">Shizuku Not Running</string>
+    <string name="shizuku_permission_needed">Permission Needed</string>
+
+    <string name="gboost_title">G-BOOST+</string>
+    <string name="gboost_subtitle">AI Performance Engine</string>
+    <string name="support_title">SUPPORT NEW²</string>
+    <string name="support_subtitle">System Optimization</string>
+    <string name="factory_reset">FACTORY RESET</string>
+    <string name="logout">LOGOUT</string>
+    <string name="footer_tag">SP NEW² • 2026 • Le Thien Nhan</string>
+
+    <string name="dialog_factory_reset_title">Restore factory settings?</string>
+    <string name="dialog_factory_reset_msg">This resets resolution and every optimization back to stock defaults. This cannot be undone.</string>
+    <string name="dialog_logout_title">Log out?</string>
+    <string name="dialog_logout_msg">Any optimization already applied will remain on your device.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="toast_need_shizuku">Please open the Shizuku app and grant permission first</string>
+    <string name="toast_gboost_on">Performance optimization applied</string>
+    <string name="toast_gboost_off">System configuration restored</string>
+    <string name="toast_support_on">Screen resolution optimized</string>
+    <string name="toast_support_off">Original resolution restored</string>
+    <string name="device_note">Best results on 90Hz/120Hz devices. 60Hz devices may not reach peak performance.</string>
+
+    <string name="lock_banner_title">🔒 Optimization tools are temporarily locked</string>
+    <string name="lock_banner_desc">We\'re focused on a full interface upgrade right now. G-BOOST+, SUPPORT NEW² and Factory Reset will return in the next update.</string>
+    <string name="lock_toast">This feature is temporarily locked in this build</string>
+    <string name="lock_badge">COMING SOON</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_device">Device</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="cd_menu">Open menu</string>
+
+    <string name="hero_badge">🔥 SP NEW² v1.0 — UI preview build</string>
+    <string name="hero_announcement">The app is going through a full interface overhaul. Optimization tools are locked for now — check back soon for the next release!</string>
+    <string name="hero_heading_1">Cross-platform</string>
+    <string name="hero_heading_2">system tuning.</string>
+    <string name="hero_heading_accent">reimagined.</string>
+    <string name="hero_desc">Higher frame rates, less stutter, cooler thermals in Free Fire and hundreds of other games — a few taps, no root required.</string>
+    <string name="cta_button">Explore features  →</string>
+
+    <string name="device_status_title">YOUR DEVICE</string>
+    <string name="label_model">Model</string>
+    <string name="label_android">Android</string>
+    <string name="label_chip">Chip</string>
+    <string name="label_ram">RAM</string>
+    <string name="label_screen">Screen</string>
+    <string name="label_battery">Battery</string>
+    <string name="label_ip">IP</string>
+    <string name="label_date">Date</string>
+    <string name="label_vulkan">Vulkan</string>
+    <string name="label_cores">CPU Cores</string>
+    <string name="vulkan_yes">Supported</string>
+    <string name="vulkan_yes_ver">Yes (Vulkan %1$s)</string>
+    <string name="vulkan_no">Not supported</string>
+
+    <string name="features_title">Highlighted features</string>
+    <string name="feature_gboost_title">G-BOOST+</string>
+    <string name="feature_gboost_desc">50+ ADB commands\nAI performance engine</string>
+    <string name="feature_display_title">Smart Display</string>
+    <string name="feature_display_desc">Auto-computed wm size\n+ optimal density</string>
+    <string name="feature_reset_title">Factory Reset</string>
+    <string name="feature_reset_desc">Restore every\nsetting to stock</string>
+    <string name="feature_platform_title">Multi Platform</string>
+    <string name="feature_platform_desc">Android available now\niOS — coming soon</string>
+
+    <string name="code_card_title">How it works — preview</string>
+    <string name="code_card_filename">gboost_engine.sh</string>
+    <string name="code_card_caption">A real excerpt from the G-BOOST+ command set — runs through Shizuku, no root needed. Full list in the Device tab.</string>
+
+    <string name="about_title">How SP NEW² actually works</string>
+    <string name="about_p1">SP NEW² uses Shizuku — a legitimate system-permission bridge trusted by millions of Android users — to run optimization ADB commands directly on your device, with no bootloader unlock and no root. Everything happens quietly in the background.</string>
+    <string name="about_p2">For Free Fire specifically, the app targets the three most common bottlenecks on mid-range hardware: system animations eating frame time, background processes competing for RAM, and a render resolution beyond what the GPU can comfortably push. G-BOOST+ disables unnecessary effects and prioritizes resources for the game process; SUPPORT NEW² recalculates the display resolution to match your exact hardware, cutting GPU load while keeping the image sharp.</string>
+    <string name="about_p3">Every change is 100%% reversible with Factory Reset. SP NEW² never modifies system files, never requests more permission than it needs, and never collects your personal data.</string>
+
+    <string name="stat_commands_value">50+</string>
+    <string name="stat_commands_label">ADB commands</string>
+    <string name="stat_refresh_value">120Hz</string>
+    <string name="stat_refresh_label">Refresh rate</string>
+    <string name="stat_android_value">8.0+</string>
+    <string name="stat_android_label">Android</string>
+
+    <string name="device_lock_title">🔒 Temporarily locked</string>
+    <string name="device_lock_desc">The switches below are a UI preview only for now. Execution will return once the interface upgrade is complete.</string>
+    <string name="placeholder_desc">This feature is under development and will arrive in a future update.</string>
+    <string name="device_page_title">Device</string>
+    <string name="device_page_subtitle">System status &amp; optimization</string>
+    <string name="device_info_title">Device information</string>
+    <string name="section_tools_title">Optimization tools</string>
+    <string name="section_system_title">System</string>
+    <string name="rocket_title">Run Optimization Script</string>
+    <string name="rocket_subtitle">Deep tuning via a dedicated shell script</string>
+    <string name="rocket_coming_soon">The optimization script will arrive in the next update</string>
+    <string name="settings_page_title">Settings</string>
+    <string name="settings_appearance_title">Display theme</string>
+    <string name="settings_appearance_desc">Choose light or dark theme for the whole app</string>
+    <string name="theme_light_label">☀ Light</string>
+    <string name="theme_dark_label">🌙 Dark</string>
+    <string name="settings_language_title">App language</string>
+    <string name="settings_language_desc">Choose your display language</string>
+    <string name="settings_about_title">About</string>
+    <string name="settings_about_version">Version 1.1 • 2026</string>
+    <string name="settings_about_desc">SP NEW² is an Android performance tool powered by Shizuku, no root required. Every change is safe and reversible.</string>
+</resources>

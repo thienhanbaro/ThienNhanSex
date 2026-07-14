@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Cung tròn trên: từ phải sang trái -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/text_primary"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M19,8 A8,8 0 0,0 5,7" />
+    <!-- Mũi tên trên -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M19,3 L19,9 L14,7 Z" />
+    <!-- Cung tròn dưới: từ trái sang phải -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/text_primary"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M5,16 A8,8 0 0,0 19,17" />
+    <!-- Mũi tên dưới -->
+    <path
+        android:fillColor="@color/text_primary"
+        android:pathData="M5,21 L5,15 L10,17 Z" />
+</vector>

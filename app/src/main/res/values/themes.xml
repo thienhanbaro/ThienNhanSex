@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.SpNew2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/terminal_bg</item>
+        <item name="colorPrimary">@color/terminal_cyan</item>
+        <item name="colorOnPrimary">@color/terminal_bg</item>
+        <item name="colorSecondary">@color/terminal_cyan_dark</item>
+        <item name="colorSurface">@color/terminal_bg_card</item>
+        <item name="colorOnSurface">@color/terminal_white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="29">false</item>
+        <item name="android:enforceStatusBarContrast" tools:targetApi="29">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="materialAlertDialogTheme">@style/SpNewAlertDialog</item>
+    </style>
+
+    <!--
+      QUAN TRỌNG: KHÔNG set android:background thô ở đây. MaterialAlertDialogBuilder
+      tự vẽ MỘT MaterialShapeDrawable duy nhất cho toàn bộ panel (title+message+nút)
+      dựa trên colorSurface của theme. Nếu chèn thêm android:background riêng, nó
+      chồng lên bên NGOÀI trong khi Material vẫn vẽ panel nội bộ của nó bên trong,
+      2 lớp nền lệch bounds nhau tạo hiệu ứng "vỡ khối/kẻ sọc" — đây chính là lỗi
+      đã gặp. Chỉ nên tuỳ biến qua shapeAppearanceOverlay (bo góc) — không đụng vào
+      background/elevation trực tiếp.
+    -->
+    <style name="SpNewAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.SpNewDialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/SpNewDialogButtonPositive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/SpNewDialogButtonNeutral</item>
+    </style>
+
+    <style name="ShapeAppearance.SpNewDialog" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="SpNewDialogButtonPositive" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/terminal_cyan</item>
+    </style>
+
+    <style name="SpNewDialogButtonNeutral" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/terminal_secondary</item>
+    </style>
+
+</resources>
